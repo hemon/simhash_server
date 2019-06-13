@@ -103,10 +103,7 @@ namespace Husky
                 _headerMap[KEY_PROTOCOL] = trim(buf[2]); 
                 //first request line end
                 //parse path to _methodGetMap
-                if("GET" == _headerMap[KEY_METHOD])
-                {
-                    _parseUrl(firstline, _methodGetMap);
-                }
+                _parseUrl(firstline, _methodGetMap);
 
                 lpos = rpos + 1;
                 if(lpos >= headerStr.size())
