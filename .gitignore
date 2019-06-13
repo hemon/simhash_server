@@ -1,2 +1,4 @@
 simhash.server
 *.swp
+.DS_Store
+simhash.server.dSYM
