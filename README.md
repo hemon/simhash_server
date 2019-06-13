@@ -18,8 +18,8 @@
 【下载】
 
 ```sh
-git clone git://github.com/yanyiwu/simhash_server.git
-cd keyword_server
+git clone git://github.com/hemon/simhash_server.git
+cd simhash_server
 make
 #如果是MacOSX用户，请使用 make osx 。
 ```
