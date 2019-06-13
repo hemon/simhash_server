@@ -32,8 +32,10 @@ make
 
 
 【请求参数】
+```
 n int 使用TopN关键字生成hash，默认10
 s string 正文内容
+```
 
 【GET】
 ```
