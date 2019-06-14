@@ -33,7 +33,7 @@ make
 
 【请求参数】
 ```
-n int 使用TopN关键字生成hash，默认10
+n int 使用TopN关键字生成hash，默认10，长文本建议取值20，否则极易冲突
 s string 正文内容
 ```
 
