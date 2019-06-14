@@ -31,7 +31,7 @@ class ReqHandler: public IRequestHandler
             httpReq.GET("s", s_str);
             URLDecode(s_str, s);
             httpReq.GET("n", n_str);
-            top_n = n_str.length() ? stoi(n_str) : TOP_N;
+            top_n = n_str.length() ? atoi(n_str.c_str())  : TOP_N;
 
             uint64_t u64;
             vector<pair<string ,double> > res;
@@ -55,7 +55,7 @@ class ReqHandler: public IRequestHandler
             string n_str;
             size_t top_n;
             httpReq.GET("n", n_str);
-            top_n = n_str.length() ? stoi(n_str) : TOP_N;
+            top_n = n_str.length() ? atoi(n_str.c_str()) : TOP_N;
             
             const string& s = httpReq.getBody();
             uint64_t u64;
